@@ -39,11 +39,12 @@ Controllers:
 Schema:
 Quiz:
 - t.string :title
+- t.text :description
 - t.integer :category_id
 
 Category 
 - t.string :name
-- t.integer :quiz_id
+- t.string :description
 
 Question:
 - t.string :prompt
@@ -61,8 +62,9 @@ Update system for each quiz, user can give upvote or downvote - refer to google 
 
 
 Tasks - To be done while following along with Cernan's videos
-1. Build controllers + their actions
-2. Build models 
-3. Migrate Database
-4. Seed Database
-5. Check that relationships make sense 
+1. Build controllers + their actions - DONE
+2. Build models - DONE
+3. Migrate Database - DONE
+4. Associate models
+5. Seed Database
+6. Check that relationships make sense 
