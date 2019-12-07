@@ -65,6 +65,6 @@ Tasks - To be done while following along with Cernan's videos
 1. Build controllers + their actions - DONE
 2. Build models - DONE
 3. Migrate Database - DONE
-4. Associate models
+4. Associate models - DONE
 5. Seed Database
 6. Check that relationships make sense 
