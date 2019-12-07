@@ -1,4 +1,4 @@
-class Api::V1::QuestionsController < ApplicationController
+class QuestionsController < ApplicationController
 
    def index
       @questions = Question.all
