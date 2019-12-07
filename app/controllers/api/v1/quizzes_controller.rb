@@ -1,4 +1,4 @@
-class Api::V1::QuizController < ApplicationController
+class Api::V1::QuizzesController < ApplicationController
 
    # all available quizzes in DB - need to render JSON
    def index

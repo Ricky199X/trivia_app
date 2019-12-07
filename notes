@@ -1,0 +1,68 @@
+1. Don't put everything in an index.js file
+2. Watch Cernan's videos - GREAT example of how to pass the project - VERY advanced tho
+3. Watch Micah's videos too
+
+- Write the backend FIRST, front end SECOND
+
+Project Idea: Single page Timed Trivia App (inspired by Sporkle)
+
+- User can pick a multiple choice quiz to take from several categories
+- User has 2 minutes to complete quiz of 10 questions, their score will be tracked 
+- After they finish the quiz, they are presented with their score, can go back to home page and take additional quizzes
+
+- Update, can have a user rating system
+
+QUESTIONS FOR MICAH:
+
+1. Where is the CRUD in this context?  - READ and UPDATE (will be handled by user upvoting the quiz)
+2. Check models + relationships: ALL SET
+3. Do I need to set anything up on the back end to track the score or can that all be handled on front end?: This can be handled on front end (note: if the user refreshes the page they will lose their score
+4. Async request: where are the opportunities to do that in this context? (is it in the timer), etc?:
+
+- this will be the fetch calls to the server
+
+RAILS BACKEND (not trying to overcomplicate this):
+1. Should contain the API of the quizzes + their answers, which will be rendered as JSON
+
+Models: 
+- Quiz (has_many :questions, belongs_to :category)
+- Question (belongs_to :quiz) - DOn't need a separate answer model because the answer can just be part of the question's object
+- Category: (has_many :quizzes)
+
+
+
+Controllers:
+- QuizController (index, show): what kinda controller actions should there be? Index, show, update
+- QuestionController: index, show
+- Category: index, show
+
+Schema:
+Quiz:
+- t.string :title
+- t.integer :category_id
+
+Category 
+- t.string :name
+- t.integer :quiz_id
+
+Question:
+- t.string :prompt
+- t.text :content - this will be an array of the questions
+- t.string :correct_answer
+- t.integer :quiz_id
+
+
+JS FRONTEND
+1. Renders quizzes (and their questions) as JSON to the page 
+2. User answers the question correctly, they advance to the next question. If they get a question wrong, they receive alert (with red styling to indicate wrong), then next question is rendered.
+3. After they finish quiz, they're given summary of their total score.
+
+Update system for each quiz, user can give upvote or downvote - refer to google material icons for the thumbs up . THIS IS THE UPDATE ACTION, THIS WILL NEED TO BE IMPLEMENTED
+
+
+Tasks - To be done while following along with Cernan's videos
+1. Build controllers + their actions
+2. Build models 
+3. Migrate Database
+4. Seed Database
+5. Check that relationships make sense 
