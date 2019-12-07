@@ -3,5 +3,8 @@ Rails.application.routes.draw do
 
 
   resources :quizzes, except: [:create]
+  resources :questions
+  resources :categories
+
 
 end

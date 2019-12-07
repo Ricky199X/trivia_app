@@ -68,5 +68,5 @@ Tasks - To be done while following along with Cernan's videos
 4. Associate models - DONE
 5. Seed Database - DONE
 6. Check that relationships make sense - DONE
-7. Add JSON Fast serializer gem 
-8. Configure file tree for serializer (look at previous lesson on it)
+7. Add JSON Fast serializer gem - DONE
+8. Configure file tree for serializer (look at previous lesson on it) 
