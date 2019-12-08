@@ -71,8 +71,10 @@ Tasks - To be done while following along with Cernan's videos
 7. Add JSON Fast serializer gem - DONE
 8. Configure file tree for serializer (look at previous lesson on it) - DONE
 9. JSON data rendering on localhost - DONE
-
 10. Figure out CORS issue - DONE
-11. Verify fetch is working and that we can render quiz name to the front-end
-12. Add buttons to make sure we can "enter" that quiz
-13. Make sure The prompt + multiple choices are rendering
+11. Verify fetch is working -  DONE
+
+12. Seed Database with 1 more quiz 
+13. render quiz name to the browser
+14. Add buttons to make sure we can "enter" that quiz
+15. Make sure The prompt + multiple choices are rendering
