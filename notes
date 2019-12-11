@@ -1,3 +1,20 @@
+Best Practice Checklist:
+
+JavaScript
+[ ] Use classes and functions to organize your code into reusable pieces.
+[ ] Translate JSON responses into JavaScript model objects using ES6 class or constructor function syntax.
+[ ] Use ES6 features when appropriate (e.g. arrow functions, let & const, rest and spread syntax).
+Rails
+[ ] Follow Rails MVC and RESTful conventions. That means, for example, that a request GET /puppies ought to be handled by the PuppiesController, fetch puppies from the database using a Puppy Active Record model, and return a list of puppies as JSON.
+[ ] Well-named variables and methods
+[ ] Short, single-purpose methods
+Git
+[ ] Aim for a large number of small commits - commit frequently!
+[ ] Add meaningful messages to your commits. When you look back at your commits with git log, the messages should describe each change.
+[ ] Don't include changes in a commit that aren't related to the commit message
+
+
+-----------------------------------------------------------------------------------------
 1. Don't put everything in an index.js file
 2. Watch Cernan's videos - GREAT example of how to pass the project - VERY advanced tho
 3. Watch Micah's videos too
@@ -73,8 +90,11 @@ Tasks - To be done while following along with Cernan's videos
 9. JSON data rendering on localhost - DONE
 10. Figure out CORS issue - DONE
 11. Verify fetch is working -  DONE
+12. Seed Database with 1 more quiz - DONE
 
-12. Seed Database with 1 more quiz 
-13. render quiz name to the browser
-14. Add buttons to make sure we can "enter" that quiz
-15. Make sure The prompt + multiple choices are rendering
+Current:
+13. append trivia names to the DOM
+14. make trivia names clickable (event listeners here) - should trainsition into the quiz itself
+15. append quiz questions to the DOM
+16. Add buttons to make sure we can "enter" that quiz
+17. Make sure The prompt + multiple choices are rendering
