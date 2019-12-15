@@ -1,14 +1,13 @@
 class CategoriesController < ApplicationController
 
    def index
-      categories = Category.all
       categoryQuizzes = Category.quizzes
-      render json: CategorySerializer.new(categories)
+      render json: CategorySerializer.new(categoryQuizzes)
    end
 
    def show
-      category = Category.find(params[:id])
-      render json: CategorySerializer.new(category)
+      categoryQuiz = Category.find(params[:id])
+      render json: CategorySerializer.new(categoryQuiz)
    end
 
 end
