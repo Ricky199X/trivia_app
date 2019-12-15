@@ -103,7 +103,12 @@ Current:
 
 
 
-17. render the quzzes associated with a specific category 
+17. render the quzzes associated with a specific category - this is a BACKEND method that.
+- the category name is clicked, the name of that category is saved as a variable and returned
+- we use that to make a get request to quiz/category=[category_name]? - this is done in index action
+- check params for params[:category] to see if it exists
+- if it does, get that category using Category.find_by_name(params[:category])
+- then return the json version of category.quizzes
 
 
 
