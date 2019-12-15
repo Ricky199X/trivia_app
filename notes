@@ -91,10 +91,27 @@ Tasks - To be done while following along with Cernan's videos
 10. Figure out CORS issue - DONE
 11. Verify fetch is working -  DONE
 12. Seed Database with 1 more quiz - DONE
+13. append trivia names to the DOM - DONE
+14. Render category names to the DOM - DONE
+16. append quiz questions to the DOM - DONE
+17. create basic quiz form template - DONE
+18. Add buttons to make sure we can "enter" that quiz - DONE
+19. make category names clickable (event listeners here) - DONE, returns the category name selected
 
 Current:
-13. append trivia names to the DOM
-14. make trivia names clickable (event listeners here) - should trainsition into the quiz itself
-15. append quiz questions to the DOM
-16. Add buttons to make sure we can "enter" that quiz
-17. Make sure The prompt + multiple choices are rendering
+
+
+
+
+17. render the quzzes associated with a specific category 
+
+
+
+18. Make sure The prompt + multiple choices are rendering
+
+- MAIN focus: watch the youtube tutorial, follow the pattern to create the quiz form 
+- the app will be almost all pagination
+- Quiz is essentially a giant form with radio for choices you can make 
+- When you submit that form, the answers you picked are evaluated and compared to whats listed as the correct answers
+- your score increases accordingly
+- final score is rendered back to the browser once you complete all the questions
