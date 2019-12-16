@@ -1,5 +1,4 @@
 class CategoriesController < ApplicationController
-   accepts_nested_attributes_for :quizzes
 
    def index
       categories = Category.all
@@ -11,10 +10,11 @@ class CategoriesController < ApplicationController
       render json: CategorySerializer.new(category)
    end
 
+
    private
 
    def category_params
-      params.require(:category).permit(:name, :description, quizzes_attributes: [:category_id, :title, :description])
+      params.require(:category).permit(:name, :description, quizzes_attributes: [:id, :title, :description, :category_id])
    end
 
 end

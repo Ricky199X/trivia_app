@@ -13,4 +13,13 @@ class QuizzesController < ApplicationController
    end
 
 
+      # display category's quizzes by category
+
+   # def by_category
+   #    # if category exists, find the quizzes associated with it
+   #    if Category.exists?(params[:])
+
+   # end
+
+
 end
