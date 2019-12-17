@@ -11,13 +11,16 @@
 # Test Category
 categories = Category.create([
    {name: 'Sports', description: 'Test your sports knowledge here!'},
-   {name: 'Music', description: 'The only rule is: No Stairway to Heaven.'}
+   {name: 'Music', description: 'The only rule is: No Stairway to Heaven.'},
+   {name: 'Geography', description: 'Do you even know where you are????'}
 ])
 
 # Test Quiz 
 quizzes = Quiz.create([
    {title: 'Sports Quiz #1', description: 'A quiz about baseball!', category_id: 1},
-   {title: 'Music Quiz #1', description: 'Test your famous frontman knowledge!', category_id: 2}
+   {title: 'Music Quiz #1', description: 'Test your famous frontman knowledge!', category_id: 2},
+   {title: 'Music Quiz #2', description: 'Covers that were bigger than the original song!', category_id: 2},
+   {title: 'Geography Quiz #2', description: 'Famous Landmarks, do you know what city they are in?', category_id: 3}
 ])
 
 # Test questions 
