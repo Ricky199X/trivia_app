@@ -1,6 +1,6 @@
 class CategoryQuizSerializer
    include FastJsonapi::ObjectSerializer
-   attributes :name, :description
+   # attributes :name, :description
 
    belongs_to :category
 
