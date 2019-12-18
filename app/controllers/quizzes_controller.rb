@@ -2,8 +2,15 @@ class QuizzesController < ApplicationController
 
    # all available quizzes in DB - need to render JSON
    def index
-      quizzes = Quiz.all
-      render json: QuizSerializer.new(quizzes)
+      if params[:category_id]
+         category = Category.find(params[:category_id])
+         
+         quizzes = Category.find(params[:category_id]).quizzes
+         render json: QuizSerializer.new(quizzes)
+      else 
+         quizzes = Quiz.all
+         render json: QuizSerializer.new(quizzes)
+      end
    end
 
    # show a single quiz - render JSON
