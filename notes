@@ -97,18 +97,19 @@ Tasks - To be done while following along with Cernan's videos
 17. create basic quiz form template - DONE
 18. Add buttons to make sure we can "enter" that quiz - DONE
 19. make category names clickable (event listeners here) - DONE, returns the category name selected
+- check params for params[:category] to see if it exists - DONE
+- if it does, get that category using Category.find_by_name(params[:category]) - DONE
+- then return the json version of category.quizzes - DONE
+- need to write function that takes the dataset id of the category I select, fetches that data by that id number - DONE
+- click a category -> got the associated category's quizzes - DONE
 
 Current:
 
+1. Need to map thru those quizzes, add them to the DOM by name 
+2. Add event listener to the quiz name -> render the start option to begin the quiz
 
 
 
-17. render the quzzes associated with a specific category - this is a BACKEND method that.
-- the category name is clicked, the name of that category is saved as a variable and returned
-- we use that to make a get request to quiz/category=[category_name]? - this is done in index action
-- check params for params[:category] to see if it exists
-- if it does, get that category using Category.find_by_name(params[:category])
-- then return the json version of category.quizzes
 
 
 
