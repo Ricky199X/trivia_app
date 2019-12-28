@@ -21,7 +21,7 @@ quizzes = Quiz.create([
    {title: 'Pick and Roll', description: 'A quiz about basketball!', category_id: 1},
    {title: 'Pigskin Madness', description: 'A quiz about football!', category_id: 1},
    {title: 'Rockers and Roadies', description: 'Test your famous frontman knowledge!', category_id: 2},
-   {title: 'Music Quiz #2', description: 'Covers that were bigger than the original song!', category_id: 2},
+   {title: 'Famous Covers', description: 'Covers that were bigger than the original song!', category_id: 2},
    {title: 'Geography Quiz #2', description: 'Famous Landmarks, do you know what city they are in?', category_id: 3}
 ])
 
@@ -63,14 +63,23 @@ questions = Question.create([
    {prompt: "What team drafted Brett Favre?", content: ['A. Green Bay Packers', 'B. Atlanta Falcons', 'C. Oakland Raiders', 'D. Minnesota Vikings'], correct_answer: 'B', quiz_id: 3},
    {prompt: "Who is the only starting quarterback to win a Super Bowl with two different teams?", content: ['A. Peyton Manning', 'B. Tom Brady', 'C. Brett Favre', 'D. Drew Brees'], correct_answer: 'A', quiz_id: 3},
    
-   {prompt: "What famous lead singer was known for writing the 2013 hit 'Why'd you only call me when you're high?'?", content: ['A. Alex Turner', 'B. Liam Ghallagher', 'C. Julian Casablancas', 'D. Tupac'], correct_answer: 'A', quiz_id: 4}
-   {prompt: "What famous lead singer caused controversy in March 1966 by declaring his band was 'bigger than Jesus'? ", content: ['A. Elvis', 'B. Liam Ghallagher', 'C. John Lennon', 'D. Damon Albarn'], correct_answer: 'C', quiz_id: 4}
-   {prompt: "What famous lead singer is best known for writing the 1966 opus 'Pet Sounds'? ", content: ['A. Ian Curtis', 'B. Brian Wilson', 'C. John Lennon', 'D. Paul Banks'], correct_answer: 'B', quiz_id: 4}
-   {prompt: "What famous lead singer is best known for his 1999 hit 'Scar Tissue'? ", content: ['A. Julian Casablancas', 'B. Anthony Keidis', 'C. Paul McCartney', 'D. Ruben Nelson'], correct_answer: 'B', quiz_id: 4}
-   {prompt: "What pop singer is known as 'The Material Girl'? ", content: ['A. Madonna', 'B. Lady Gaga', 'C. Britney Spears', 'D. Nick Minaj'], correct_answer: 'A', quiz_id: 4}
-   {prompt: "Which jazz musician was known for playing a bent trumpet?", content: ['A. Miles Davis', 'B. Dizzy Gillespie', 'C. Louis Armstrong', 'D. Nat King Cole'], correct_answer: 'B', quiz_id: 4}
-   {prompt: "Who did the vocals for Pink Floyd's 'Great Gig in the Sky'? ", content: ['A. Roger Waters', 'B. Lou Reed', 'C. Clare Torry', 'D. David Byrne'], correct_answer: 'C', quiz_id: 4}
-   {prompt: "Who was the oldest living artist to top the UK Singles Chart?", content: ['A. Billie Holiday', 'B. Tom Jones', 'C. Cher', 'D. Kylie Minouge'], correct_answer: 'B', quiz_id: 4}
-   {prompt: "What musician holds the record for most Top 10 hits on the UK Singles Chart?", content: ['A. Elvis', 'B. Liam Ghallagher', 'C. Thom Yorke', 'D. Damon Albarn'], correct_answer: 'A', quiz_id: 4}
-   {prompt: "What kind of guitar is carved into Jimi Hendrix's tombstone?", content: ['A. Fender Telecaster', 'B. Fender Stratocaster', 'C. Schecter Hellraiser', 'D. Gibson Les Paul'], correct_answer: 'B', quiz_id: 4}
+   {prompt: "What famous lead singer was known for writing the 2013 hit 'Why'd you only call me when you're high?'?", content: ['A. Alex Turner', 'B. Liam Ghallagher', 'C. Julian Casablancas', 'D. Tupac'], correct_answer: 'A', quiz_id: 4},
+   {prompt: "What famous lead singer caused controversy in March 1966 by declaring his band was 'bigger than Jesus'? ", content: ['A. Elvis', 'B. Liam Ghallagher', 'C. John Lennon', 'D. Damon Albarn'], correct_answer: 'C', quiz_id: 4},
+   {prompt: "What famous lead singer is best known for writing the 1966 opus 'Pet Sounds'? ", content: ['A. Ian Curtis', 'B. Brian Wilson', 'C. John Lennon', 'D. Paul Banks'], correct_answer: 'B', quiz_id: 4},
+   {prompt: "What famous lead singer is best known for his 1999 hit 'Scar Tissue'? ", content: ['A. Julian Casablancas', 'B. Anthony Keidis', 'C. Paul McCartney', 'D. Ruben Nelson'], correct_answer: 'B', quiz_id: 4},
+   {prompt: "What pop singer is known as 'The Material Girl'? ", content: ['A. Madonna', 'B. Lady Gaga', 'C. Britney Spears', 'D. Nick Minaj'], correct_answer: 'A', quiz_id: 4},
+   {prompt: "Which jazz musician was known for playing a bent trumpet?", content: ['A. Miles Davis', 'B. Dizzy Gillespie', 'C. Louis Armstrong', 'D. Nat King Cole'], correct_answer: 'B', quiz_id: 4},
+   {prompt: "Who did the vocals for Pink Floyd's 'Great Gig in the Sky'? ", content: ['A. Roger Waters', 'B. Lou Reed', 'C. Clare Torry', 'D. David Byrne'], correct_answer: 'C', quiz_id: 4},
+   {prompt: "Who was the oldest living artist to top the UK Singles Chart?", content: ['A. Billie Holiday', 'B. Tom Jones', 'C. Cher', 'D. Kylie Minouge'], correct_answer: 'B', quiz_id: 4},
+   {prompt: "What musician holds the record for most Top 10 hits on the UK Singles Chart?", content: ['A. Elvis', 'B. Liam Ghallagher', 'C. Thom Yorke', 'D. Damon Albarn'], correct_answer: 'A', quiz_id: 4},
+   {prompt: "What kind of guitar is carved into Jimi Hendrix's tombstone?", content: ['A. Fender Telecaster', 'B. Fender Stratocaster', 'C. Schecter Hellraiser', 'D. Gibson Les Paul'], correct_answer: 'B', quiz_id: 4},
+
+   {prompt: "Which famous Whitney Houston song was originally a cover of a song performed previously by Dolly Parton?", content: ['A. My Heart Will Go On', 'B. I Will Always Love You', 'C. Somebody Who Loves Me', 'D. Saving All My Love For You'], correct_answer: 'B', quiz_id: 4},
+   {prompt: "Which famous Stevie Wonder song was originally written by Jeff Beck?", content: ['A. Superstition', 'B. Sir Duke', 'C. Signed, Sealed, Delivered', 'D. Dance With My Father'], correct_answer: 'A', quiz_id: 4},
+   {prompt: "Which band originally wrote the Beatles' hit 'Twist and Shout'?", content: ['A. The Grateful Dead', 'B. The Top Notes', 'C. The Four Tops', 'D. The Jackson 5'], correct_answer: 'B', quiz_id: 4},
+   {prompt: "What band originally wrote The Clash's 'I Fought the Law'?", content: ['A. The Crickets', 'B. Luther Vandross', 'C. The Beatles', 'D. The Beach Boys'], correct_answer: 'A', quiz_id: 4},
+   {prompt: "This musician is best known for originally writing Aretha Franklin's 'Respect':", content: ['A. Marvin Gaye', 'B. Otis Redding', 'C. Morris Day', 'D. Prince'], correct_answer: 'B', quiz_id: 4},
+   {prompt: "Which musician originally wrote Jimi Hendrix's 'All Along the Watchtower'?", content: ['A. Brian Wilson', 'B. George Harrison', 'C. Bob Dylan', 'D. Morrissey'], correct_answer: 'C', quiz_id: 4},
+   {prompt: "Cindy Lauper's 'Girls Just Wanna Have Fun' was originally written by:", content: ['A. Jerry Garcia', 'B. Johnny Cash', 'C. Robert Hazard', 'D. Michael Jackson'], correct_answer: 'C', quiz_id: 4},
+   {prompt: "Johnny Cash's 2002 hit 'Hurt' was originally written by: ", content: ['A. Limp Bizkit', 'B. The Smashing Pumpkins', 'C. Nine Inch Nails', 'D. Korn'], correct_answer: 'B', quiz_id: 4},
 ])
