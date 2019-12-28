@@ -22,7 +22,7 @@ quizzes = Quiz.create([
    {title: 'Pigskin Madness', description: 'A quiz about football!', category_id: 1},
    {title: 'Rockers and Roadies', description: 'Test your famous frontman knowledge!', category_id: 2},
    {title: 'Famous Covers', description: 'Covers that were bigger than the original song!', category_id: 2},
-   {title: 'Geography Quiz #2', description: 'Famous Landmarks, do you know what city they are in?', category_id: 3}
+   {title: 'America the Beautiful', description: 'A quiz about the U-S of A', category_id: 3}
 ])
 
 # Test questions 
@@ -74,12 +74,23 @@ questions = Question.create([
    {prompt: "What musician holds the record for most Top 10 hits on the UK Singles Chart?", content: ['A. Elvis', 'B. Liam Ghallagher', 'C. Thom Yorke', 'D. Damon Albarn'], correct_answer: 'A', quiz_id: 4},
    {prompt: "What kind of guitar is carved into Jimi Hendrix's tombstone?", content: ['A. Fender Telecaster', 'B. Fender Stratocaster', 'C. Schecter Hellraiser', 'D. Gibson Les Paul'], correct_answer: 'B', quiz_id: 4},
 
-   {prompt: "Which famous Whitney Houston song was originally a cover of a song performed previously by Dolly Parton?", content: ['A. My Heart Will Go On', 'B. I Will Always Love You', 'C. Somebody Who Loves Me', 'D. Saving All My Love For You'], correct_answer: 'B', quiz_id: 4},
-   {prompt: "Which famous Stevie Wonder song was originally written by Jeff Beck?", content: ['A. Superstition', 'B. Sir Duke', 'C. Signed, Sealed, Delivered', 'D. Dance With My Father'], correct_answer: 'A', quiz_id: 4},
-   {prompt: "Which band originally wrote the Beatles' hit 'Twist and Shout'?", content: ['A. The Grateful Dead', 'B. The Top Notes', 'C. The Four Tops', 'D. The Jackson 5'], correct_answer: 'B', quiz_id: 4},
-   {prompt: "What band originally wrote The Clash's 'I Fought the Law'?", content: ['A. The Crickets', 'B. Luther Vandross', 'C. The Beatles', 'D. The Beach Boys'], correct_answer: 'A', quiz_id: 4},
-   {prompt: "This musician is best known for originally writing Aretha Franklin's 'Respect':", content: ['A. Marvin Gaye', 'B. Otis Redding', 'C. Morris Day', 'D. Prince'], correct_answer: 'B', quiz_id: 4},
-   {prompt: "Which musician originally wrote Jimi Hendrix's 'All Along the Watchtower'?", content: ['A. Brian Wilson', 'B. George Harrison', 'C. Bob Dylan', 'D. Morrissey'], correct_answer: 'C', quiz_id: 4},
-   {prompt: "Cindy Lauper's 'Girls Just Wanna Have Fun' was originally written by:", content: ['A. Jerry Garcia', 'B. Johnny Cash', 'C. Robert Hazard', 'D. Michael Jackson'], correct_answer: 'C', quiz_id: 4},
-   {prompt: "Johnny Cash's 2002 hit 'Hurt' was originally written by: ", content: ['A. Limp Bizkit', 'B. The Smashing Pumpkins', 'C. Nine Inch Nails', 'D. Korn'], correct_answer: 'B', quiz_id: 4},
+   {prompt: "Which famous Whitney Houston song was originally a cover of a song performed previously by Dolly Parton?", content: ['A. My Heart Will Go On', 'B. I Will Always Love You', 'C. Somebody Who Loves Me', 'D. Saving All My Love For You'], correct_answer: 'B', quiz_id: 5},
+   {prompt: "Which famous Stevie Wonder song was originally written by Jeff Beck?", content: ['A. Superstition', 'B. Sir Duke', 'C. Signed, Sealed, Delivered', 'D. Dance With My Father'], correct_answer: 'A', quiz_id: 5},
+   {prompt: "Which band originally wrote the Beatles' hit 'Twist and Shout'?", content: ['A. The Grateful Dead', 'B. The Top Notes', 'C. The Four Tops', 'D. The Jackson 5'], correct_answer: 'B', quiz_id: 5},
+   {prompt: "What band originally wrote The Clash's 'I Fought the Law'?", content: ['A. The Crickets', 'B. Luther Vandross', 'C. The Beatles', 'D. The Beach Boys'], correct_answer: 'A', quiz_id: 5},
+   {prompt: "This musician is best known for originally writing Aretha Franklin's 'Respect':", content: ['A. Marvin Gaye', 'B. Otis Redding', 'C. Morris Day', 'D. Prince'], correct_answer: 'B', quiz_id: 5},
+   {prompt: "Which musician originally wrote Jimi Hendrix's 'All Along the Watchtower'?", content: ['A. Brian Wilson', 'B. George Harrison', 'C. Bob Dylan', 'D. Morrissey'], correct_answer: 'C', quiz_id: 5},
+   {prompt: "Cindy Lauper's 'Girls Just Wanna Have Fun' was originally written by:", content: ['A. Jerry Garcia', 'B. Johnny Cash', 'C. Robert Hazard', 'D. Michael Jackson'], correct_answer: 'C', quiz_id: 5},
+   {prompt: "Johnny Cash's 2002 hit 'Hurt' was originally written by: ", content: ['A. Limp Bizkit', 'B. The Smashing Pumpkins', 'C. Nine Inch Nails', 'D. Korn'], correct_answer: 'B', quiz_id: 5},
+
+   {prompt: "Death Valley is located in what U.S. state?", content: ['A. California', 'B. Texas', 'C. New Mexico', 'D. Utah'], correct_answer: 'A', quiz_id: 6},
+   {prompt: "Which of the Great Lakes is located entirely within the U.S. border?", content: ['A. Lake Huron', 'B. Lake Michigan', 'C. Lake Superior', 'D. Lake Erie'], correct_answer: 'B', quiz_id: 6},
+   {prompt: "What is the tallest mountain in the United States?", content: ['A. Mount St. Helen', 'B. Mount Everest', 'C. Mount Rushmore', 'D. Mount McKinley'], correct_answer: 'D', quiz_id: 6},
+   {prompt: "What is the smallest U.S. state?", content: ['A. Alaska', 'B. Rhode Island', 'C. Delaware', 'D. Massachusetts'], correct_answer: 'B', quiz_id: 6},
+   {prompt: "Lake Okeechobee is located in what U.S. state?", content: ['A. Florida', 'B. Wyoming', 'C. California', 'D. Missouri'], correct_answer: 'A', quiz_id: 6},
+   {prompt: "Pierre is the capital of what U.S. state?", content: ['A. Montana', 'B. Illinois', 'C. South Dakota', 'D. Maryland'], correct_answer: 'C', quiz_id: 6},
+   {prompt: "Which of the following states does NOT border the Great Lakes?", content: ['A. Iowa', 'B. Michigan', 'C. Ohio', 'D. Minnesota'], correct_answer: 'A', quiz_id: 6},
+   {prompt: "What U.S. state contains the following rivers: the Guadalupe, Trinity, Rio Grande, Brazos, and Colorado?", content: ['A. Arizona', 'B. Texas', 'C. Colorado', 'D. Utah'], correct_answer: 'B', quiz_id: 6},
+   {prompt: "What state is bordered by Nebraska, Kansas, Oklahoma, New Mexico, Utah, and Wyoming?", content: ['A. Missouri', 'B. Texas', 'C. Idaho', 'D. Colorado'], correct_answer: 'D', quiz_id: 6},
+   {prompt: "What is the longest river in the United States?", content: ['A. Missouri River', 'B. Rio Grande', 'C. Mississippi River', 'D. Mystic River'], correct_answer: 'A', quiz_id: 6},
 ])
