@@ -22,7 +22,7 @@ quizzes = Quiz.create([
    {title: 'Pigskin Madness', description: 'A quiz about football!', category_id: 1},
    {title: 'Rockers and Roadies', description: 'Test your famous frontman knowledge!', category_id: 2},
    {title: 'Famous Covers', description: 'Covers that were bigger than the original song!', category_id: 2},
-   {title: 'America the Beautiful', description: 'A quiz about the U-S of A', category_id: 3}
+   {title: 'America the Beautiful', description: 'A quiz about the U-S of A', category_id: 3},
    {title: 'World Geography', description: 'All over the MAP!', category_id: 3}
 ])
 
