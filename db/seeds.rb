@@ -19,6 +19,7 @@ categories = Category.create([
 quizzes = Quiz.create([
    {title: 'Batting .1000', description: 'A quiz about baseball!', category_id: 1},
    {title: 'Pick and Roll', description: 'A quiz about basketball!', category_id: 1},
+   {title: 'Pigskin Madness', description: 'A quiz about football!', category_id: 1},
    {title: 'Music Quiz #1', description: 'Test your famous frontman knowledge!', category_id: 2},
    {title: 'Music Quiz #2', description: 'Covers that were bigger than the original song!', category_id: 2},
    {title: 'Geography Quiz #2', description: 'Famous Landmarks, do you know what city they are in?', category_id: 3}
@@ -50,5 +51,17 @@ questions = Question.create([
    {prompt: "What NBA team won eight consecutive championships from 1959 to 1966?", content: ['A. Los Angeles Lakers', 'B. New York Knicks', 'C. Boston Celtics', 'D. Portland Trailblazers'], correct_answer: 'C', quiz_id: 2},
    {prompt: "Who invented the game of basketball?", content: ['A. Frank Mahan', 'B. Abner Doubleday', 'C. Walter Camp', 'D. James Naismith'], correct_answer: 'D', quiz_id: 2},
 
+
+   {prompt: "Which NFL team features a helmet logo on only one side of their helmet?", content: ['A. Patriots', 'B. Cowboys', 'C. Steelers', 'D. Dolphins'], correct_answer: 'D', quiz_id: 3},
+   {prompt: "What wide receiver caused a sensation his rookie season with a one-handed catch?", content: ['A. Odell Beckham Jr.', 'B. Jerry Rice', 'C. Antonio Brown', 'D. Randy Moss'], correct_answer: 'A', quiz_id: 3},
+   {prompt: "Who is the only Super Bowl MVP to have played on the losing team?", content: ['A. Larry Csonka', 'B. Randy White', 'C. Len Dawson', 'D. Chuck Howley'], correct_answer: 'D', quiz_id: 3},
+   {prompt: "Which player holds the NFL record for longest interception return?", content: ['A. Eric Barry', 'B. Deion Sanders', 'C. Ed Reed', 'D. Ronnie Lott'], correct_answer: 'C', quiz_id: 3},
+   {prompt: "What New England Patriot earned Offensive Rookie of the Year honors in 1995?", content: ['A. Terry Glenn', 'B. Curtis Martin', 'C. Troy Brown', 'D. Tom Brady'], correct_answer: 'B', quiz_id: 3},
+   {prompt: "What was the only team that beat the Jaguars in 1999?", content: ['A. Steelers', 'B. Browns', 'C. Jets', 'D. Titans'], correct_answer: 'D', quiz_id: 3},
+   {prompt: "Which player supposedly put a fifty year curse on the Detroit Lions?", content: ['A. Earl Morral', 'B. Dutch Clark', 'C. Bobby Layne', 'D. Greg Landry'], correct_answer: 'C', quiz_id: 3},
+   {prompt: "Who was the first player in NFL history to pass for 400 yards, throw 4 TD passes, and rush for 50 yards in a single game?", content: ['A. Dak Prescott', 'B. Deshaun Watson', 'C. Lamar Jackson', 'D. Michael Vick'], correct_answer: 'B', quiz_id: 3},
+   {prompt: "What team drafted Brett Favre?", content: ['A. Green Bay Packers', 'B. Atlanta Falcons', 'C. Oakland Raiders', 'D. Minnesota Vikings'], correct_answer: 'B', quiz_id: 3},
+   {prompt: "Who is the only starting quarterback to win a Super Bowl with two different teams?", content: ['A. Peyton Manning', 'B. Tom Brady', 'C. Brett Favre', 'D. Drew Brees'], correct_answer: 'A', quiz_id: 3},
+   
    {prompt: "What famous lead singer was known for writing the 2013 hit 'Why'd you only call me when you're high?' ", content: ['A. Alex Turner', 'B. Liam Ghallagher', 'C. Julian Casablancas', 'D. Tupac'], correct_answer: 'A', quiz_id: 2}
 ])
