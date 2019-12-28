@@ -23,6 +23,7 @@ quizzes = Quiz.create([
    {title: 'Rockers and Roadies', description: 'Test your famous frontman knowledge!', category_id: 2},
    {title: 'Famous Covers', description: 'Covers that were bigger than the original song!', category_id: 2},
    {title: 'America the Beautiful', description: 'A quiz about the U-S of A', category_id: 3}
+   {title: 'World Geography', description: 'All over the MAP!', category_id: 3}
 ])
 
 # Test questions 
@@ -93,4 +94,15 @@ questions = Question.create([
    {prompt: "What U.S. state contains the following rivers: the Guadalupe, Trinity, Rio Grande, Brazos, and Colorado?", content: ['A. Arizona', 'B. Texas', 'C. Colorado', 'D. Utah'], correct_answer: 'B', quiz_id: 6},
    {prompt: "What state is bordered by Nebraska, Kansas, Oklahoma, New Mexico, Utah, and Wyoming?", content: ['A. Missouri', 'B. Texas', 'C. Idaho', 'D. Colorado'], correct_answer: 'D', quiz_id: 6},
    {prompt: "What is the longest river in the United States?", content: ['A. Missouri River', 'B. Rio Grande', 'C. Mississippi River', 'D. Mystic River'], correct_answer: 'A', quiz_id: 6},
+
+   {prompt: "In what country can you visit Machu Picchu?", content: ['A. Mexico', 'B. Vietnam', 'C. Peru', 'D. Argentina'], correct_answer: 'C', quiz_id: 7},
+   {prompt: "What African country served as the setting for Tatooine in Star Wars?", content: ['A. Tunisia', 'B. Ghana', 'C. Liberia', 'D. Ethiopia'], correct_answer: 'A', quiz_id: 7},
+   {prompt: "What city is the capital of Australia?", content: ['A. Perth', 'B. Melbourne', 'C. Canberra', 'D. Sydney'], correct_answer: 'C', quiz_id: 7},
+   {prompt: "What mountain is nicknamed the 'Savage Mountain'?", content: ['A. K2', 'B. Mount Everest', 'C. Annapurna', 'D. Matterhorn'], correct_answer: 'A', quiz_id: 7},
+   {prompt: "What is Earth's largest continent?", content: ['A. Europe', 'B. Asia', 'C. Antarctica', 'D. North America'], correct_answer: 'B', quiz_id: 7},
+   {prompt: "What body of water separates Africa and Europe?", content: ['A. Strait of Malacca', 'B. Strait of Hormuz', 'C. Strait of Gibralter', 'D. Strait of Magellan'], correct_answer: 'C', quiz_id: 7},
+   {prompt: "Which country is NOT part of the Scaninavian Peninsula?", content: ['A. Norway', 'B. Finland', 'C. Sweden', 'D. Denmark'], correct_answer: 'D', quiz_id: 7},
+   {prompt: "What Canadian province boasts the longest freshwater beach in the world?", content: ['A. Ontario', 'B. Nova Scotia', 'C. Saskatchewan', 'D. British Columbia'], correct_answer: 'A', quiz_id: 7},
+   {prompt: "What is the national river of Russia?", content: ['A. Ob', 'B. Danube', 'C. Volga', 'D. Rhine'], correct_answer: 'C', quiz_id: 7},
+   {prompt: "What is the only major city located on two continents?", content: ['A. Rome', 'B. New Delhi', 'C. London', 'D. Istanbul'], correct_answer: 'D', quiz_id: 7}
 ])
