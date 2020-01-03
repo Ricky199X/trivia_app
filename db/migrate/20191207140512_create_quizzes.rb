@@ -4,6 +4,7 @@ class CreateQuizzes < ActiveRecord::Migration[6.0]
       t.string :title
       t.string :description
       t.integer :category_id
+      t.integer :upvote_count, default: 0
       t.timestamps
     end
   end
