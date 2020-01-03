@@ -82,7 +82,7 @@ questions = Question.create([
    {prompt: "This musician is best known for originally writing Aretha Franklin's 'Respect':", content: ['A. Marvin Gaye', 'B. Otis Redding', 'C. Morris Day', 'D. Prince'], correct_answer: 2, quiz_id: 5},
    {prompt: "Which musician originally wrote Jimi Hendrix's 'All Along the Watchtower'?", content: ['A. Brian Wilson', 'B. George Harrison', 'C. Bob Dylan', 'D. Morrissey'], correct_answer: 3, quiz_id: 5},
    {prompt: "Cindy Lauper's 'Girls Just Wanna Have Fun' was originally written by:", content: ['A. Jerry Garcia', 'B. Johnny Cash', 'C. Robert Hazard', 'D. Michael Jackson'], correct_answer: 3, quiz_id: 5},
-   {prompt: "Johnny Cash's 2002 hit 'Hurt' was originally written by: ", content: ['A. Limp Bizkit', 'B. The Smashing Pumpkins', 'C. Nine Inch Nails', 'D. Korn'], correct_answer: 2, quiz_id: 5},
+   {prompt: "Johnny Cash's 2002 hit 'Hurt' was originally written by: ", content: ['A. Limp Bizkit', 'B. The Smashing Pumpkins', 'C. Nine Inch Nails', 'D. Korn'], correct_answer: 3, quiz_id: 5},
 
    {prompt: "Death Valley is located in what U.S. state?", content: ['A. California', 'B. Texas', 'C. New Mexico', 'D. Utah'], correct_answer: 1, quiz_id: 6},
    {prompt: "Which of the Great Lakes is located entirely within the U.S. border?", content: ['A. Lake Huron', 'B. Lake Michigan', 'C. Lake Superior', 'D. Lake Erie'], correct_answer: 2, quiz_id: 6},
