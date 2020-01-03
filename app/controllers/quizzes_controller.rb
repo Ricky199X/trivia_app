@@ -19,14 +19,16 @@ class QuizzesController < ApplicationController
       render json: QuizSerializer.new(quiz)
    end
 
+   def update
+      quiz = Quiz.find(params[:id])
+      quiz.update(quiz_params)
 
-      # display category's quizzes by category
-
-   # def by_category
-   #    # if category exists, find the quizzes associated with it
-   #    if Category.exists?(params[:])
-
-   # end
+      if quiz.save
+         render json: {quiz: quiz}, status: 200  
+       else
+         resource_error
+       end
+   end
 
 
 end
