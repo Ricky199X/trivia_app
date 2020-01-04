@@ -21,13 +21,19 @@ class QuizzesController < ApplicationController
 
    def update
       quiz = Quiz.find(params[:id])
-      quiz.update(quiz_params)
+      quiz.update!(quiz_params)
+      puts quiz
 
       if quiz.save
          render json: {quiz: quiz}, status: 200  
-       else
-         resource_error
        end
+   end
+
+
+   private 
+   
+   def quiz_params
+      params.require(:quiz).permit(:upvote_count)
    end
 
 
